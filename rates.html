@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internet Rates and Pricing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2><em>Ricsman Internet Cafe</em></h2>
+  <img src="../images/logo.jpg" style="width:15%">
+</div>
+	
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INTERNET RATES AND PRICING</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Rates');" id="myLink">
+        <div class="w3-col s6 tablink">Internet Rates</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Print');">
+        <div class="w3-col s6 tablink">Print & Scan</div>
+      </a>
+    </div>
+
+    <div id="Rates" class="w3-container menu w3-padding-48 w3-card">
+	
+	<table style="width:100%">
+  		<tr>
+    			<th>Hour</th>
+    			<th>Computer Rental</th> 
+    			<th>Wi-Fi Rental</th>
+  		</tr>
+		<tr>
+    			<td>30 Days</td>
+    			<td>X</td>
+    			<td>300.00</td>
+  		</tr>
+ 		 <tr>
+    			<td>24</td>
+    			<td>X</td>
+    			<td>15.00</td>
+  		</tr>
+  		<tr>
+    			<td>12</td>
+   			 <td>X</td>
+    			<td>10.00</td>
+  		</tr>
+  		<tr>
+    			<td>3</td>
+    			<td>36.00</td>
+    			<td>5.00</td>
+  		</tr>
+  		<tr>
+    			<td>2</td>
+    			<td>24.00</td>
+    			<td>X</td>
+  		</tr>
+  		<tr>
+    			<td>1</td>
+    			<td>12.00</td>
+    			<td>3.00</td>
+  		</tr>
+  		<tr>
+    			<td>30 Min.</td>
+    			<td>7.00</td>
+    			<td>X</td>
+  		</tr>
+  		<tr>
+    			<td>15 Min.</td>
+    			<td>4.00</td>
+    			<td>X</td>
+  		</tr>
+	</table>
+     </div>
+     <div id="Print" class="w3-container menu w3-padding-48 w3-card">
+	<table style="width:100%">
+  		<tr>
+    			<th>Paper Size</th>
+    			<th>Colored</th>
+    			<th>Black</th> 
+    			<th>Scan</th>
+  		</tr>
+  		<tr>
+    			<td>Long</td>
+    			<td>8.00</td>
+    			<td>4.00</td>
+    			<td>X</td>
+  		</tr>
+  		<tr>
+    			<td>A4</td>
+    			<td>8.00</td>
+    			<td>3.00</td>
+    			<td>5.00</td>
+  		</tr>
+  		<tr>
+    			<td>Short</td>
+    			<td>8.00</td>
+    			<td>3.00</td>
+    			<td>5.00</td>
+  		</tr>
+		<tr>
+    			<td>ID Pictures (1x1)&(2x2)</td>
+    			<td>50.00</td>
+    			<td>X</td>
+    			<td>X</td>
+  		</tr>
+	</table>
+      </div>
+  </div>
+</div>
+
+<div style="background-color:mediumseagreen;text-align:center;padding:10px;margin-top:10px;font-size:12px;">©2023 by Ricsman's Internet Cafe
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>
