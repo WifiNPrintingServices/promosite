@@ -6,7 +6,7 @@ body {
   font-family: Calibri, Helvetica, sans-serif;
   color:white;
   background-color: #6f8dfc;
-  background-image: url("../images/logo3.jpg");
+  background-image: url("../images/logo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -21,8 +21,8 @@ body {
 .header {
   padding: 10px;
   font-size: 15px;
-  text-align: center;
-  background-color: mediumseagreen;
+  text-align: left;
+  background-color: #082753;
   color: white;
 }
 
@@ -103,4 +103,5 @@ section::after {
     width: 100%;
     height: auto;
   }
+
 
