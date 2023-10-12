@@ -16,7 +16,10 @@ body {
  color:white; 
  font-size:130%;
 }
-
+.para2 {
+ color:green; 
+ font-size:130%;
+}
 /* Style the header */
 .header {
   padding: 10px;
