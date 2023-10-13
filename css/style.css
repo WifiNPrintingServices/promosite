@@ -21,9 +21,8 @@ body {
  font-size:130%;
 }
 .searchbox{
-  border:1px dotted black;
   padding:4px;
-  width:18em;
+  width:13em;
 }
 /* Style the header */
 .header {
