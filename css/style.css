@@ -20,6 +20,11 @@ body {
  color:green; 
  font-size:130%;
 }
+.searchbox{
+  border:1px dotted black;
+  padding:4px;
+  width:18em;
+}
 /* Style the header */
 .header {
   padding: 10px;
