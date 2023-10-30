@@ -2,71 +2,321 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>RICSMAN WiFi and Printing Services</title>
+<title>Ricsman's Internet Cafe</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/x-icon" href="../promosite/images/favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
+
 <body>
 
-<div class="header">
- 	<a href="index.html"><img src="../promosite/images/mainlogo.jpg" 		alt="Ricsman Logo" style="width:99px;height:38px;"></a>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-top w3-card" style="right:0">
+  <!-- Avatar image in top left corner -->
+  <img src="../promosite/images/logo.jpg" style="width:100%; padding-top:40px">
+  <a href="#" class="w3-bar-item w3-button w3-padding-medium w3-white">
+    <i class="fa fa-home w3-medium"></i>
+    <p >HOME</p>
+  </a>
+  <a href="#services" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <i class="fa fa-car w3-medium"></i>
+    <p >SERVICES</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <i class="fa fa-envelope w3-medium"></i>
+    <p >CONTACTS</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">
+    <i class="fa fa-user w3-medium"></i>
+    <p ">ABOUT</p>
+  </a>
+</nav>
 
-  	<!--img src="../images/logo.jpg" style="width:15%"-->
- 		<div class="para1">
-    			<p><strong>A Place for All</strong></p>
-    			<p><strong>Here at Ricsman</strong>, we strive 				to provide round-	the-clock services for all your 				workspace and hangout needs. Whether you and 	the 				gang need to kill a few hours or if you need an 				inspirational space to work 	on your deadlines, 			<strong>all are welcome!</strong></p>
-		</div>
-</div>
-
-<section>
-  <div class="nav">
-      	<p style="color:Black; font-size:150%;"><strong>Services Offered:</strong></p>
-	   <div class="para2">
-		<ul style="line-height:50%; list-style-type: none">
-      			<li><p><strong>Computer Rental</strong></p></li>
-      			<li><p><strong>Wi-Fi Rental</strong></p></li>
-      			<li><p><strong>Print</strong></p></li>
-			<li><p><strong>Photo Copy</strong></p></li>
-			<li><p><strong>Scan</strong></p></li>
-			<li><p><strong>ID Pictures</strong></p></li>
-      		</ul>
-	  
-      <a href="rates.html"><img src="../promosite/images/checkbutton.png" 		alt="check price button" style="width:129px;height:68px;"></a>
-		   
-	 </div>	   
-  </div>
-  
-  <div class="article">
-	  <p style="color:Black; font-size:110%;"><strong>Search your homework below:</strong></p>
-<form action="https://www.bing.com/search" method="get">
-    <div class="input-box">
-      <i class="uil uil-search"></i>
-     <input type="text"   name="q" placeholder="Search here..."
+<!-- Search Box Wide Screen -->
+<div class="w3-top w3-small w3-hide-small" id="myNavbar">
+   <div class="w3-bar w3-teal w3-hover-opacity-off w3-center w3-large w3-card">
+     <form class="search" action="https://www.bing.com/search" method="get">
+      <div class="input-box" style="padding-top:2px; padding-bottom:2px">
+        <input type="search"   name="q" placeholder="Search here"
 			onfocus="if(this.value==this.defaultValue)this.value=''; 			this.style.color='black';" onblur="if(this.value=='')				this.value=this.defaultValue; "/>
-      <button class="button">Search</button>
-	
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+     </div>
+    </form>
+</div>
+
+<!-- Search Box Small Screen -->
+<div class="w3-top w3-small w3-hide-large w3-hide-medium" id="myNavbar">
+   <div class="w3-bar w3-teal w3-hover-opacity-off w3-center w3-large">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important"><img src="../promosite/images/logo.jpg" style="width:35px"></a>
+     <form class="search" action="https://www.bing.com/search" method="get">
+      <div class="input-box" style="padding-top:6px; padding-bottom:2px">
+        <input type="search"   name="q" placeholder="Search here"
+			onfocus="if(this.value==this.defaultValue)this.value=''; 			this.style.color='black';" onblur="if(this.value=='')				this.value=this.defaultValue; "/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+     </div>
+    </form>
+</div>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-bottom w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-teal w3-hover-opacity-off w3-center">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#services" class="w3-bar-item w3-button" style="width:25% !important">SERVICES</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTS</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+  </div>
+</div>
+
+<header>
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-padding-medium" id="main">
+<div class="w3-sand w3-large">
+
+ <div class="w3-container">
+  <div class="w3-content" style="max-width:700px; padding-top:35px">
+    <p><strong>Here at Ricsman Internet Cafe</strong>, we strive to provide round-the-clock services for all your workspace and hangout needs. Whether you and 	the gang need to kill a few hours or if you need an inspirational space to work on your deadlines, <strong>all are welcome!</strong></p>
+   	
+	<!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container w3-card w3-hover-shadow mySlides">
+      <img src="../promosite/images/idpicture.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+      </div>
     </div>
-</form>
-       <div class="videoResponsive">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/aa6dTd416rA?controls=1" allowfullscreen
-  		webkitallowfullscreen
-  		mozallowfullscreen
-  		allow="encrypted-media"
-  		style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;">
-	  </iframe>
-	</div>
+    <div class="w3-display-container w3-card w3-hover-shadow mySlides">
+      <img src="../promosite/images/wifi.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      </div>
+    </div>
   </div>
 
-  <div class="right">
-    <p><strong>About</strong></p>
-    <p>Ricsman was founded in 2010 by a group of craftsmen, artists and activists who shared one vision: forming a communal Internet Cafe for creating, learning, and collaborating. Our modern facilities and professional team members will make your visit an unforgettable experience. Stop by our Entablado location to check out what makes us so great!</p>
-  </div>	
-</section>
-
-<div style="background-color:#082753;text-align:center;padding:10px;margin-top:10px;font-size:12px;">©2023 by Ricsman
+  </div>
 </div>
+
+<!-- Services Container -->
+<div class="w3-container" id="services">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-wide w3-round w3-black">Services</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-black">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Rates');" id="myLink">
+        <div class="w3-col s6 tablink">Computer & WiFi Rental Rates</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Print');">
+        <div class="w3-col s6 tablink">Print & Scan</div>
+      </a>
+    </div>
+
+    <div id="Rates" class="w3-container menu w3-padding-48 w3-card">
+	<table style="width:100%">
+  		<tr>
+    			<th>Duration</th>
+    			<th>Computer Rental</th> 
+    			<th>Wi-Fi Rental</th>
+  		</tr>
+		<tr>
+    			<td>30 Days</td>
+    			<td>N/A</td>
+    			<td>300.00</td>
+  		</tr>
+ 		 <tr>
+    			<td>24 Hours</td>
+    			<td>N/A</td>
+    			<td>15.00</td>
+  		</tr>
+  		<tr>
+    			<td>12 Hours</td>
+   			 <td>N/A</td>
+    			<td>10.00</td>
+  		</tr>
+  		<tr>
+    			<td>3 Hours</td>
+    			<td>36.00</td>
+    			<td>5.00</td>
+  		</tr>
+  		<tr>
+    			<td>2 Hours</td>
+    			<td>24.00</td>
+    			<td>N/A</td>
+  		</tr>
+  		<tr>
+    			<td>1 Hour</td>
+    			<td>12.00</td>
+    			<td>3.00</td>
+  		</tr>
+  		<tr>
+    			<td>30 Mins.</td>
+    			<td>7.00</td>
+    			<td>N/A</td>
+  		</tr>
+  		<tr>
+    			<td>15 Mins.</td>
+    			<td>4.00</td>
+    			<td>N/A</td>
+  		</tr>
+	</table>
+     </div>
+     <div id="Print" class="w3-container menu w3-padding-48 w3-card">
+	<table style="width:100%">
+  		<tr>
+    			<th>Paper Size</th>
+    			<th>Print Colored</th>
+    			<th>Print Black</th> 
+    			<th>Scan</th>
+  		</tr>
+  		<tr>
+    			<td>Long</td>
+    			<td>10.00</td>
+    			<td>4.00</td>
+    			<td>N/A</td>
+  		</tr>
+  		<tr>
+    			<td>A4</td>
+    			<td>8.00</td>
+    			<td>3.00</td>
+    			<td>5.00</td>
+  		</tr>
+  		<tr>
+    			<td>Short</td>
+    			<td>8.00</td>
+    			<td>3.00</td>
+    			<td>5.00</td>
+  		</tr>
+		<tr>
+    			<td>Photo Copy (Short, A4)</td>
+    			<td>8.00</td>
+    			<td>3.00</td>
+    			<td>N/A</td>
+  		</tr>
+		<tr>
+    			<td>ID Pictures (1x1), (2x2)</td>
+    			<td>50.00</td>
+    			<td>N/A</td>
+    			<td>N/A</td>
+  		</tr>
+	</table>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-row" id="contact">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-wide w3-round w3-black">Contacts</span></h5>
+
+  <div class="w3-half w3-padding-small">
+      <div class="w3-card-4">
+        <div class="w3-container">
+          <p class="w3-opacity">Outlook</p>
+          <p><a href="mailto:frontviewer07@hotmail.ph"><button class="w3-button w3-light-grey w3-block">Write</button></a></p>
+        </div>
+      </div>
+     </div>
+
+     <div class="w3-half w3-padding-small">
+      <div class="w3-card-4">
+        <div class="w3-container">
+          <p class="w3-opacity">Messenger</p>
+          <p><a href="https://m.me/rico.deguzman1"><button class="w3-button w3-light-grey w3-block">Write</button></a></p>
+        </div>
+      </div>
+     </div>
+   
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64""><span class="w3-wide w3-round w3-black">About</span></h5>
+    <p>Ricsman Internet Cafe was founded in 2010 with one vision: forming a communal Internet Cafe for creating, learning, and collaborating. Ricsman Internet Cafe is a one-stop shop for all your online needs. Whether you want to surf the web, play games, chat with friends, or do some work, we have the best equipment and services for you. If you are looking for a place to enjoy the internet, Ricsman Internet Cafe is the place for you. Come and visit us today and see for yourself why we are the best internet cafe in town. We look forward to seeing you soon!</p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-20 w3-medium" style="padding-bottom:25px">
+  <p>©2023 by Ricsman Internet Cafe</p>
+</footer>
+</div>
+
+<script>
+// Top Navigation
+$(document).ready(function() {
+	$("body").on('click', '.top', function() {
+		$("nav.menu").toggleClass("menu_show");
+	});
+});
+</script>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
 </html>
-
