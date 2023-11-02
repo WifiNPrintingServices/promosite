@@ -28,7 +28,7 @@ p {
 
 /* Set the width of the sidebar to 80px */
 .w3-sidebar {width: 80px;background: #ffffff;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (80px) */
+/* Add a right margin to the "page content" that matches the width of the sidebar (80px) */
 #main {margin-right: 80px}
 
 .menu {
