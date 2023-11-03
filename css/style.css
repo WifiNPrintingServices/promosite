@@ -51,11 +51,13 @@ form.search input[type=search] {
   font-size: 17px;
   border: 1px solid grey;
   float: center;
+  width: 40%;
   background: #f1f1f1;
 }
 
 form.search button {
   float: center;
+  width: 10%;
   padding: 3px;
   background: #2196F3;
   color: white;
