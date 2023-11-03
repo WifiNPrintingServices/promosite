@@ -14,10 +14,8 @@
 <body>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-top w3-card" style="right:0">
-  <!-- Avatar image in top right corner -->
-  <img src="../promosite/images/logo.jpg" style="width:100%; margin-top:48px">
-  <a href="#" class="w3-bar-item w3-button w3-padding-medium w3-white">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-top w3-card w3-black" style="right:0">
+  <a href="#" class="w3-bar-item w3-button w3-padding-medium" style="width:100%; padding-top:56px">
     <i class="fa fa-home w3-medium"></i>
     <p >HOME</p>
   </a>
@@ -36,8 +34,9 @@
 </nav>
 
 <!-- Search Box Wide Screen -->
-<div class="w3-top w3-small w3-hide-small" id="myNavbar">
-   <div class="w3-bar w3-teal w3-hover-opacity-off w3-center w3-large w3-card">
+<div class="w3-top w3-small w3-hide-small"">
+   <div class="w3-bar w3-black w3-hover-opacity-off w3-center w3-small">
+   <img src="../promosite/images/logo.jpg" alt="logo" class="w3-bar-item" style="width:10%">
      <form class="search" action="https://www.bing.com/search" method="get">
       <div class="input-box" style="padding-top:2px; padding-bottom:2px">
         <input type="search" class="w3-round-xlarge w3-padding" name="q" placeholder="Search here"
@@ -49,9 +48,9 @@
 </div>
 
 <!-- Search Box Small Screen -->
-<div class="w3-top w3-small w3-hide-large w3-hide-medium" id="myNavbar">
-   <div class="w3-bar w3-teal w3-hover-opacity-off w3-center w3-large">
-    <a href="#" class="w3-bar-item w3-button" style="width:15% !important"><img src="../promosite/images/logo.jpg" style="width:35px"></a>
+<div class="w3-top w3-hide-large w3-hide-medium">
+  <div class="w3-top w3-bar w3-black w3-hover-opacity-off w3-center w3-small">
+    <img src="../promosite/images/logo.jpg" alt="logo" class="w3-bar-item" style="width:15%; height:30px">
      <form class="search" action="https://www.bing.com/search" method="get">
       <div class="input-box" style="padding-top:6px; padding-bottom:2px">
         <input type="search" class="w3-round-xlarge w3-padding" style="width:65%" name="q" placeholder="Search here"
@@ -73,17 +72,17 @@
 </div>
 
 <header>
-<!-- Header with image -->
-<header class="bgimg w3-display-container" id="home">
+<!-- Header-->
+<header id="home">
 </header>
 
-<!-- Add a background color and large text to the whole page -->
+<!-- Add a background color -->
 <div class="w3-padding-medium" id="main">
-<div class="w3-sand w3-large">
+<div class="w3-dark-grey w3-large">
 
  <div class="w3-container">
   <div class="w3-content" style="max-width:700px; padding-top:35px">
-    <p><strong>Here at Ricsman Internet Cafe</strong>, we strive to provide round-the-clock services for all your workspace and hangout needs. Whether you and 	the gang need to kill a few hours or if you need an inspirational space to work on your deadlines, <strong>all are welcome!</strong></p>
+    <p class="w3-text-white"><strong>Here at Ricsman Internet Cafe</strong>, we strive to provide round-the-clock services for all your workspace and hangout needs. Whether you and 	the gang need to kill a few hours or if you need an inspirational space to work on your deadlines, <strong>all are welcome!</strong></p>
    	
 	<!-- Slideshow -->
   <div class="w3-container">
@@ -125,7 +124,7 @@
 <div class="w3-container" id="services">
   <div class="w3-content" style="max-width:700px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-wide w3-round w3-black">Services</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-wide w3-round w3-black w3-text-white">Services</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding w3-black">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Rates');" id="myLink">
@@ -231,21 +230,21 @@
 <!-- Contact Container -->
 <div class="w3-container w3-row" id="contact">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-wide w3-round w3-black">Contacts</span></h5>
+    <h5 class="w3-center w3-padding-64"><span class="w3-wide w3-round w3-black w3-text-white">Contacts</span></h5>
 
   <div class="w3-half w3-padding-small">
-      <div class="w3-card-4 w3-round-xlarge">
+      <div class="w3-card-4 w3-round-xlarge w3-black">
         <div class="w3-container">
-          <p class="w3-opacity">Outlook</p>
+          <p class="w3-text-white">Outlook</p>
           <p><a href="mailto:frontviewer07@hotmail.ph"><button class="w3-button w3-light-grey w3-block">Write</button></a></p>
         </div>
       </div>
      </div>
 
      <div class="w3-half w3-padding-small">
-      <div class="w3-card-4 w3-round-xlarge">
+      <div class="w3-card-4 w3-round-xlarge w3-black">
         <div class="w3-container">
-          <p class="w3-opacity">Messenger</p>
+          <p class="w3-text-white">Messenger</p>
           <p><a href="https://m.me/rico.deguzman1"><button class="w3-button w3-light-grey w3-block">Write</button></a></p>
         </div>
       </div>
@@ -258,14 +257,18 @@
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64""><span class="w3-wide w3-round w3-black">About</span></h5>
-    <p>Ricsman Internet Cafe was founded in 2010 with one vision: forming a communal Internet Cafe for creating, learning, and collaborating. Ricsman Internet Cafe is a one-stop shop for all your online needs. Whether you want to surf the web, play games, chat with friends, or do some work, we have the best equipment and services for you. If you are looking for a place to enjoy the internet, Ricsman Internet Cafe is the place for you. Come and visit us today and see for yourself why we are the best internet cafe in town. We look forward to seeing you soon!</p>
+    <p class="w3-text-white">Ricsman Internet Cafe was founded in 2010 with one vision: forming a communal Internet Cafe for creating, learning, and collaborating. Ricsman Internet Cafe is a one-stop shop for all your online needs. Whether you want to surf the web, play games, chat with friends, or do some work, we have the best equipment and services for you. If you are looking for a place to enjoy the internet, Ricsman Internet Cafe is the place for you. Come and visit us today and see for yourself why we are the best internet cafe in town. We look forward to seeing you soon!</p>
   </div>
 </div>
 
 
 <!-- Footer -->
-<footer class="w3-center w3-white w3-padding-20 w3-medium" style="padding-bottom:25px">
-  <p>©2023 by Ricsman Internet Cafe</p>
+<div class="w3-container">
+  <div class="w3-content" style="max-width:700px; margin-bottom:45px">
+    <footer class="w3-center w3-black w3-padding-20 w3-medium w3-text-white" >
+    <a href="#">©2023 by Ricsman Internet Cafe </a>
+  </div>
+</div>
 </footer>
 </div>
 
