@@ -6,9 +6,13 @@ body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
 }
+h5 {
+  color: white;
+}
 
 p {
   font-size: 0.875em;
+  color: white;
 }
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
@@ -16,8 +20,8 @@ p {
 
 
 /* Set the width of the sidebar to 80px */
-.w3-sidebar {width: 80px;background: #ffffff;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (80px) */
+.w3-sidebar {width: 80px; right: 0; background: #ffffff;}
+/* Add a right margin to the "page content" that matches the width of the sidebar (80px) */
 #main {margin-right: 80px}
 
 .menu {
@@ -84,4 +88,3 @@ form.ask after {
   clear: both;
   display: table;
 }
-
