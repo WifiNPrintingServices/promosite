@@ -65,8 +65,7 @@ form.ask input[type=search] {
 form.ask button {
   float: center;
   padding: 5px;
-  margin: 6px 15px 6px 0;
-  margin-bottom: 6px;
+  margin: 6px 15px 6px 0;
   background: #2196F3;
   color: white;
   font-size: 17px;
@@ -74,8 +73,7 @@ form.ask button {
   border-left: none;
   border-radius: 25px;
   cursor: pointer;
-  width:8%; 
-  margin-right: 15px;
+  width:8%; 
 }
 form.ask button:hover {
   background: #0b7dda;
