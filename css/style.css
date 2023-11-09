@@ -50,22 +50,33 @@ video {
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-right: 0}}
 
+/* Search */
+div.relative {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border-radius: 25px;
+  margin-left: 300px;
+} 
 form.ask input[type=search] {
-  padding: 5px 20px 5px 25px;
-  margin: 8px 0 8px 0;
+  padding: 10px 63px 10px 25px;
+  margin: 0 0 8px 0;
   font-size: 17px;
   border: 1px solid grey;
   border-radius: 25px;
-  float: center;
-  width: 55%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
   background: #f1f1f1;
 }
 
-form.ask button {
-  float: center;
-  padding: 5px;
-  margin: 6px 15px 6px 0;
+div.absolute button{
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin-right: 3px;
+  padding: 2px;
   background: #2196F3;
   color: white;
   font-size: 17px;
@@ -73,7 +84,7 @@ form.ask button {
   border-left: none;
   border-radius: 25px;
   cursor: pointer;
-  width:8%; 
+  width:10%; 
 }
 form.ask button:hover {
   background: #0b7dda;
@@ -83,3 +94,7 @@ form.ask after {
   clear: both;
   display: table;
 }
+@media only screen and (max-width: 1000px) {div.relative {margin-left: 80px}}
+@media only screen and (max-width: 800px) {div.relative {max-width: 500px}}
+@media only screen and (max-width: 700px) {div.relative {max-width: 400px}}
+@media only screen and (max-width: 600px) {div.relative {max-width: 300px}}
