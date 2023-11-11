@@ -94,7 +94,8 @@ form.ask after {
   clear: both;
   display: table;
 }
-@media only screen and (max-width: 1000px) {div.relative {margin-left: 80px}}
-@media only screen and (max-width: 800px) {div.relative {max-width: 500px}}
-@media only screen and (max-width: 700px) {div.relative {max-width: 400px}}
-@media only screen and (max-width: 600px) {div.relative {max-width: 300px}}
+/* Responsive */
+@media only screen and (max-width: 1200px) {div.relative {margin-left: 230px; width: 100%}}
+@media only screen and (max-width: 1000px) {div.relative {margin-left: 160px; width: 430px}}
+@media only screen and (max-width: 700px) {div.relative {margin-left: 120px; width: 350px}}
+@media only screen and (max-width: 600px) {div.relative {margin-left: 80px; width: 300px}}
