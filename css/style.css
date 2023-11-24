@@ -55,9 +55,9 @@ div.relative {
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: 40px;
+  height: 37px;
   border-radius: 25px;
-  margin-left: 300px;
+  margin-left: 370px;
 } 
 form.ask input[type=search] {
   padding: 10px 68px 10px 25px;
@@ -67,7 +67,7 @@ form.ask input[type=search] {
   border-radius: 25px;
   width: 100%;
   max-width: 600px;
-  height: 40px;
+  height: 37px;
   background: #f1f1f1;
 }
 
