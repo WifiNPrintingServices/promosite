@@ -55,7 +55,7 @@ div.relative {
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: 37px;
+  height: 36px;
   border-radius: 25px;
   margin-left: 370px;
 } 
@@ -67,7 +67,7 @@ form.ask input[type=search] {
   border-radius: 25px;
   width: 100%;
   max-width: 600px;
-  height: 37px;
+  height: 36px;
   background: #f1f1f1;
 }
 
@@ -76,7 +76,7 @@ div.absolute button{
   top: 2px;
   right: 0;
   margin-right: 2px;
-  padding: 2px;
+  padding: 1px;
   background: #2196F3;
   color: white;
   font-size: 17px;
