@@ -18,7 +18,7 @@ p {
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
 .w3-bar{
-opacity: 0.5;
+opacity: 0.8;
 }
 /* Set the width of the sidebar to 80px */
 .w3-sidebar {width: 80px; background: #ffffff;}
