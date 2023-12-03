@@ -79,7 +79,7 @@ div.absolute button{
   font-size: 17px;
   border: 1px solid grey;
   border-left: none;
-  border-radius: 25px;
+  border-radius: 0 25px 25px 0;
   cursor: pointer;
   width:50px; 
 }
